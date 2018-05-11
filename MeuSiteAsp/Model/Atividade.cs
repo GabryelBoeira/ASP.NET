@@ -7,7 +7,7 @@ using Model;
 
 namespace Model
 {
-    public class Atividade
+    public partial class Atividade
     {
         public int IdAtividade { get; set; }
         public string Titulo { get; set; }
