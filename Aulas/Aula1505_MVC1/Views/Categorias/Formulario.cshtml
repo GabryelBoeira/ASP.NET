@@ -1,0 +1,19 @@
+﻿@using Aula1505_MVC1.Models
+
+@{
+    ViewBag.Title = "Formulario";
+}
+
+<h2>@ViewBag.Title</h2>
+
+@using (Html.BeginForm())
+{
+    <div style="grid-row-align: center">
+        @Html.TextBox("nome")
+        @Html.TextBox("descricao")
+        @Html.CheckBox("Ativo")
+        <input type="submit" value="Enviar" />
+    </div>
+}
+
+
