@@ -6,13 +6,30 @@
 
 <h2>Create</h2>
 
-@using (Html.BeginForm())
+ @using (Html.BeginForm())
 {
+     @*
+    Formolario v1 (usando model)
     @Html.TextAreaFor(m => m.Nome)
     <br/>
     @Html.CheckBoxFor(m => m.Ativo)
     <br />
     <input type="submit" value="Salvar" />
+    *@
 
-}
+
+     //segundo v2 metodo o programa encontra sozinho o tipo da variavel
+    <div class="carousel">
+        <!-- cria o label --> @Html.DisplayFor(m => m.Nome)
+        <!-- cria o campo para preenchimento --> @Html.EditorFor(m => m.Nome)
+
+
+        <!-- cria o label --> @Html.DisplayFor(m => m.Ativo)
+        @Html.EditorFor(m => m.Ativo)// cria o campo para preenchimento
+    </div>
+     // v2 Monta o formulario altomaticamente
+     //  @Html.EditorForModel()
+
+ }
+
 
