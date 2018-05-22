@@ -19,17 +19,17 @@
 
 
      //segundo v2 metodo o programa encontra sozinho o tipo da variavel
-    <div class="carousel">
-        <!-- cria o label --> @Html.DisplayFor(m => m.Nome)
-        <!-- cria o campo para preenchimento --> @Html.EditorFor(m => m.Nome)
+  
+       @Html.DisplayFor(m => m.Nome)
+       @Html.EditorFor(m => m.Nome)
 
 
-        <!-- cria o label --> @Html.DisplayFor(m => m.Ativo)
-        @Html.EditorFor(m => m.Ativo)// cria o campo para preenchimento
-    </div>
-     // v2 Monta o formulario altomaticamente
-     //  @Html.EditorForModel()
-
+       @Html.DisplayFor(m => m.Ativo)
+       @Html.EditorFor(m => m.Ativo)
+    @*
+        // v3 Monta o formulario altomaticamente
+        //  @Html.EditorForModel()
+    *@
  }
 
 
