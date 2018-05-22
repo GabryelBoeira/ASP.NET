@@ -19,17 +19,22 @@
 
 
      //segundo v2 metodo o programa encontra sozinho o tipo da variavel
-  
+        <br />
        @Html.DisplayFor(m => m.Nome)
        @Html.EditorFor(m => m.Nome)
 
-
+        <br/>
        @Html.DisplayFor(m => m.Ativo)
        @Html.EditorFor(m => m.Ativo)
     @*
         // v3 Monta o formulario altomaticamente
         //  @Html.EditorForModel()
     *@
+    <br />
+    <input type="submit" value="Salvar">
  }
-
+@section Scripts{
+    @Scripts.Render("~/bundles/jqueryval")
+    
+    }
 

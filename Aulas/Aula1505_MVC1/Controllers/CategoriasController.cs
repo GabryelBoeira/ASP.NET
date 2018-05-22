@@ -47,6 +47,11 @@ namespace Aula1505_MVC1.Controllers
         [HttpPost]
         public ActionResult Create(Categoria categoria)
         {
+            if (ModelState.IsValid)
+            {
+                //salva
+
+            }
             //metodo para retornar os valores caso ocorra não ocorra o algum erro no cadastro de informações 
             return View(categoria);
         }
