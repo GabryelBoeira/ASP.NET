@@ -9,7 +9,9 @@ namespace Aula2205_Entidy.Models.DAL
 
     public class MeuContexto : DbContext 
     {
-        public MeuContexto() : base("strConn") {
+        public MeuContexto() : base("strConn")
+        {
         }
+
     }
 }
