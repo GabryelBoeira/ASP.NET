@@ -11,7 +11,14 @@ namespace Aula2205_Entidy.Models.DAL
     {
         public MeuContexto() : base("strConn")
         {
-        }
 
+            //DropCreateDatabaseAlways (Usar durante a crição da model)
+
+            //Database.SetInitializer<DropCreateDatabaseIfModelChanges>
+
+            //Migrantions (Utilizar para produção)
+            Database.SetInitializer<MeuContexto>(new DropCreateDatabaseIfModelChanges<MeuContexto>());
+
+        }
     }
 }
