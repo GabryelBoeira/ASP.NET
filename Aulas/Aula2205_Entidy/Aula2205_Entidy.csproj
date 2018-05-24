@@ -203,6 +203,7 @@
     </Compile>
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Atividade.cs" />
+    <Compile Include="Models\Categoria.cs" />
     <Compile Include="Models\DAL\MeuContexto.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
