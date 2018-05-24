@@ -20,5 +20,10 @@ namespace Aula2205_Entidy.Models.DAL
             Database.SetInitializer<MeuContexto>(new DropCreateDatabaseIfModelChanges<MeuContexto>());
 
         }
+
+        Database.se
+
+
+
     }
 }
