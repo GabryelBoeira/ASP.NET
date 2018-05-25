@@ -38,6 +38,7 @@ namespace Aula2205_Entidy.Controllers
             return View(usuario);
         }
 
+        //get
         public ActionResult Details(int? id) {
 
             //verifiaca se o id estiver nulo 
@@ -52,6 +53,33 @@ namespace Aula2205_Entidy.Controllers
                 return HttpNotFound();
             }
             return View(usu);
+        }
+
+        //get
+        public ActionResult Edit(int? id)
+        {
+
+            //verifiaca se o id estiver nulo vindo do http
+            if (id == null)
+            {
+                return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
+
+            }
+            //verifiaca se o id estiver nulo vindo do banco
+
+            MeuContexto contexto = new MeuContexto();
+            Usuario usu = contexto.Usuarios.Find(id);
+            if (usu == null)
+            {
+                return HttpNotFound();
+            }
+            return View(usu);
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public ActionResult Edit(Usuario usuario){
+            return View(usuario);
         }
 
 
