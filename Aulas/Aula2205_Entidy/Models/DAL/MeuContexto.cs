@@ -21,9 +21,12 @@ namespace Aula2205_Entidy.Models.DAL
 
         }
 
-        Database.se
+        public DbSet<Usuario> Usuarios { get; set; }
+        public DbSet<Categoria> Categorias { get; set; }
+        public DbSet<Atividade> Atividades { get; set; }
 
-
-
+        internal class ToList : List<Usuario>
+        {
+        }
     }
 }
